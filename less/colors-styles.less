@@ -1,0 +1,349 @@
+(~'[data-body-class="@{body-option}"]') {
+  #qLpercentage{
+    background: @main-color;
+    color: @main-text-color !important;
+  }
+  a{
+    color: @main-color;
+    &:hover{
+      color: darken(@main-color, 15%);
+    }
+  }
+  [class*="icon-"]{
+    color: @main-color;
+  }
+  .icon-set{
+    color: #666666;
+    &:hover{
+      background: @main-color;
+      color: @main-text-color;
+    }
+  }
+  .color-border-bottom{
+    border-bottom-color: @main-color;
+  }
+  [class*="slide-nav"]{
+    a{
+      &:hover{
+        color: @main-text-color;
+        border-color: @main-color;
+        background: @main-color;
+        [class*="icon-"]{
+          color: @main-text-color;
+        }
+      }
+    }
+  }
+  .social-icons{
+    a{
+      &:hover{
+        color: @main-color;
+        border-color: @main-color;
+        [class*="icon-"]{
+          color: @main-color;
+        }
+      }
+    }
+  }
+  .scroll-up{
+    [class*="icon-"]{
+      color: @main-text-color;
+    }
+    &:hover{
+      background: @main-color;
+    }
+  }
+  .scroll-down{
+    span{
+      &:hover{
+        background: @main-color;
+        border-color: @main-color;
+        [class*="icon-"]{
+          color: @main-text-color;
+        }
+      }
+    }
+  }
+  .navbar{
+    .navbar-brand{
+      background: @main-color;
+      color: @main-text-color;
+      &:hover{
+        color: @main-text-color;
+      }
+    }
+    .navbar-nav{
+      li{
+        a{
+          &:hover, &:focus{
+            color: @main-color;
+          }
+        }
+        &.current-menu-item, &.active{
+          > a{
+            color: @main-color;
+            &:hover, &:focus{
+              color: @main-color;
+            }
+          }
+        }
+      }
+    }
+    &.nav-transparent{
+      .navbar-nav{
+        a{
+          color:@main-text-color;
+          &:hover, &:focus{
+            color: @main-color;
+          }
+        }
+      }
+    }
+
+    .navbar-toggle{
+      background: @main-color;
+      border-color: @main-color;
+      &:hover{
+        background: lighten(@main-color, 5%);
+      }
+    }
+  }
+  .site-footer{
+    .nav{
+      li{
+        a{
+          &:hover{
+            color: @main-color;
+          }
+        }
+      }
+    }
+  }
+  .about-us{
+    h2{
+      a{
+        &:hover{
+          color: @main-color;
+        }
+      }
+    }
+  }
+  .slogan{
+    background: @main-color;
+    color: @main-text-color;
+    h1,h2,h3{
+      color: @main-text-color;
+    }
+  }
+  .portfolio-section{
+    .portfolio-items-list{
+      .portfolio-item{
+        hgroup{
+          h5{
+            a{
+              &:hover{
+                color: @main-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    .portfolio-filter{
+      li{
+        a{
+          &:hover{
+            color: @main-color;
+            border-color: @main-color;
+          }
+          &.active{
+            background: @main-color;
+            color: @main-text-color;
+            border-color: @main-color;
+          }
+        }
+      }
+    }
+  }
+  .icon-list-with-text{
+    .icons{
+      i{
+        &:hover{
+          background: @main-color;
+          color: @main-text-color;
+        }
+      }
+    }
+  }
+  .list-mark{
+    li{
+      &:before{
+        border-color: @main-color;
+      }
+    }
+  }
+  .list-num{
+    li{
+      &:before{
+        border-color: @main-color;
+      }
+    }
+  }
+  [class*='list-empty']{
+    > li{
+      &:before{
+        color: @main-color;
+      }
+    }
+  }
+  [class*='list-full']{
+    > li{
+      &:before{
+        background:@main-color;
+        color: @main-text-color;
+      }
+    }
+  }
+  .alert{
+    &.alert-colored{
+      background: @main-color;
+      color: @main-text-color;
+      .close{
+        color: @main-text-color;
+      }
+    }
+    &.alert-border{
+      border-color: @main-color;
+      color: @main-color;
+      .close{
+        color: @main-color;
+      }
+    }
+  }
+  .custom-panel-group{
+    .panel-custom{
+      .panel-heading{
+        .panel-title{
+          a{
+            &:hover{
+              color: @main-color;
+            }
+            &.active{
+              background: @main-color;
+              color: @main-text-color;
+              &:after{
+                color: @main-text-color;
+              }
+              &:hover{
+                color: @main-text-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .progress{
+    .progress-bar-custom{
+      background: @main-color;
+    }
+  }
+  .widget{
+    .tagcloud{
+      a{
+        &:hover{
+          border-color: @main-color;
+          color: @main-color;
+        }
+      }
+    }
+  }
+  .post{
+    .custom-date{
+      background: @main-color;
+      color: @main-text-color;
+    }
+  }
+
+  .pagination{
+    &.pagination-custom{
+      li{
+        &.active{
+          a{
+            background: @main-color;
+            color: @main-text-color;
+          }
+        }
+      }
+    }
+  }
+  .btn-default{
+    background: @main-color;
+    border-bottom-color: @main-color;
+    color: @main-text-color;
+    &:hover{
+      background: @main-color;
+      border-bottom-color: darken(@main-color, 5%);
+      color: @main-text-color;
+    }
+    &.btn-inverse{
+      background: @main-text-color;
+      color: @main-color;
+      &:hover{
+        background: @main-text-color;
+        border-bottom-color: darken(@main-text-color, 5%);
+        color: @main-color;
+      }
+    }
+  }
+  .btn-white{
+    color: @main-text-color;
+    border-color: @main-text-color;
+    &:hover{
+      background: @main-text-color;
+      color: @main-color;
+    }
+  }
+  .breadcrumbs {
+    .breadcrumb{
+      .active {
+        a {
+          color: @main-color;
+        }
+      }
+    }
+  }
+  .nav-tabs{
+    &.nav-justified{
+      li{
+        a{
+          &:hover, &:focus{
+            color: @main-color;
+          }
+        }
+        &.active{
+          a{
+            background: @main-color;
+            color: @main-text-color;
+            &:hover, &:focus{
+              background: @main-color;
+              color: @main-text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .easyPieChart{
+    span{
+      color: @main-color;
+    }
+  }
+  .team-section{
+    a{
+      &:hover{
+        color: @main-color;
+      }
+    }
+  }
+}

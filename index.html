@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+ <title>The One - home page template</title>
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <meta name="author" content="Sprintheme">
+ <meta charset="UTF-8"/>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+ <link rel="icon" type="image/ico" href="images/favicon.ico"/>
+ <link href="lib/isotope/css/style.css" rel="stylesheet"/>
+ <link href="lib/fontello/css/fontello.css" rel="stylesheet"/>
+ <link href="style.css" rel="stylesheet"/>
+ <link href="css/color-azure-blue.css" rel="stylesheet"/>
+ <link href="css/color-chestnut.css" rel="stylesheet"/>
+ <link href="css/color-frog.css" rel="stylesheet"/>
+ <link href="css/color-grass.css" rel="stylesheet"/>
+ <link href="css/color-pale-brown.css" rel="stylesheet"/>
+ <link href="css/color-plum.css" rel="stylesheet"/>
+ <link href="css/color-red.css" rel="stylesheet"/>
+ <link href="css/color-titian.css" rel="stylesheet"/>
+ <link href="css/color-twitter.css" rel="stylesheet"/>
+ <link href="css/color-yellow.css" rel="stylesheet"/>
+ <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+ <link href="css/jquery.bxslider.css" rel="stylesheet" />
+ <link href="css/sequencejs.css" rel="stylesheet"/>
+
+ <!-- Fav and touch icons -->
+ <link rel="shortcut icon" href="images/ico/favicon.ico">
+ <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+ <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+ <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+ <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+<!-- Just for debugging purposes. Don't actually copy this line! -->
+
+<!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+<!--[if lt IE 9]>
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/bx-responsive.js"></script>
+<script src="js/jquery.cycle2.js"></script> 
+<script src="js/jquery.cycle2.carousel.js"></script> 
+<script src="js/animation.js"></script> 
+<script src="http://jquery.bassistance.de/validate/jquery.validate.js"></script>
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+		
+	jQuery("#contact_form").validate({  // initialize the plugin                 
+		debug: true,
+		 submitHandler: function(form) {
+	$.ajax({
+				  type: "POST",
+				  url: "contact.php",
+				  data: {
+					  firstname : $('#inputName').val(),
+					  email : $('#inputEmail').val(),
+					  title : $('#inputTitle').val(), 
+					  message : $('#inputMessage').val() },
+				  success: function(data) {
+					if (data) {
+						//alert(data);
+						$('#email_message').html(data);
+					} else {
+					  alert(data); //testing purposes
+					}
+					form.reset();
+				  }
+			});
+
+  }                            
+    });
+});
+
+</script>
+</head>
+
+<body class="home" data-body-class="titian">
+
+<!-- Start Header section -->
+
+<header class="navbar navbar-default navbar-fixed-top nav-transparent" role="navigation" id="navbar-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12"> 
+        
+        <!-- start button for collapsed menu-->
+        
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="index.html"><strong>Spectral</strong>Салон мебели для домашних кинотеатров</a> </div>
+        
+        <!-- end button for collapsed menu--> 
+        
+        <!-- start menu-->
+        
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li > <a href="#home" class="homelink">Главная</a> </li>
+            <li><a href="#about">О магазине</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+        
+        <!-- end menu--> 
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- End Header section --> 
+
+<!--Start Slide Show section-->
+
+<section class="content-section home-slideshow" id="home" >  
+  <div id="sequence">
+  	
+		<img class="sequence-prev" src="images/bt-prev.png" alt="Previous" />
+		<img class="sequence-next" src="images/bt-next.png" alt="Next" />
+        
+		<ul class="sequence-canvas">
+			<li class="slide-frame">
+				<div class="slide-bg slide-bg1"></div>
+				<div class="slide-title"><p>Spectral Cocoon</p></div>
+                <div class="slide-text"><p>Элегантная ТВ-тумба</p></div>
+			</li><!-- Frame 1 -->
+			<li class="slide-frame black">
+				<div class="slide-bg slide-bg2"></div>
+                <div class="slide-title"><p>Spectral Music Box</p></div>
+                <div class="slide-text"><p>Превосходная комбинация
+                    мебели и места для аудиотехники</p></div>
+			</li> <!-- Frame 2 -->
+            <li class="slide-frame">
+                <div class="slide-bg slide-bg4"></div>
+                <div class="slide-title"><p>Spectral Cocoon</p></div>
+                <div class="slide-text"><p>Самый красивый домашний кинотеатр города</p></div>
+            </li><!-- Frame 3 -->
+		</ul>
+	</div>
+  <span class="scroll-down"> <a href="#about"><span><i class="icon-down-open-big"></i></span></a></span> </section>
+
+<!--End Slide Show section--> 
+
+<!--About Page-->
+<section class="content-section about-us" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <article>
+          <header>
+        	<hgroup class="heading1">
+            <h1 class="text-center">О магазине</h1>
+            <div class="headingUline"></div>
+            <h3 class="text-center">Салон мебели для домашних кинотеатров</h3>
+		</hgroup>
+          </header>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End About Page-->
+
+<!--Contact Start-->
+<section class="content-section contact-section" id="contact">
+  <div class="container">
+    <div class="row">
+        <hgroup class="heading1">
+          <h1>Контакты</h1>
+          <div class="headingUline"></div>
+          <h3>Ждем Вас в нашем салоне</h3>
+        </hgroup>
+
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <hgroup class="col-sm-offset-3">
+          <h3>Обратная связь</h3>
+        </hgroup>
+        <form class="form-horizontal" role="form" id="contact_form" action="contact.php">
+          <div class="form-group">
+            <label for="inputName" class="col-sm-3 control-label"> Имя<span class="req">*</span> </label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control input-lg" id="inputName" name="firstname" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail" class="col-sm-3 control-label"> Email<span class="req">*</span> </label>
+            <div class="col-sm-9">
+              <input type="email" class="form-control input-lg" id="inputEmail" name="email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputMessage" class="col-sm-3 control-label"> Сообщение<span class="req">*</span> </label>
+            <div class="col-sm-9">
+              <textarea class="form-control" id="inputMessage" name="message" rows="9" required></textarea>
+              <div id="email_message" style="color: red; padding-top: 15px;"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+              <button type="submit" class="btn btn-default btn-lg">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+        <hgroup>
+          <h3>Контактная информация</h3>
+        </hgroup>
+        <p> <i class="icon-location-5"></i> Адрес: ул. Толбухина 135 </p>
+        <p> <i class="icon-mobile"></i> Телефон: 067 481-15-60 </p>
+        <p> <i class="icon-email"></i> Email: <a href="index.html">spectral_odessa@ukr.net</a> </p>
+        <hgroup>
+          <h3>Наш салон</h3>
+        </hgroup>
+        <p><img src="images/ouroffice.png" alt="img" /></p>
+        <br />
+      </div>
+    </div>
+  </div>
+</section>
+<!--Contact end-->
+
+<!--map start-->
+<section>
+	<iframe class="gmap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;sll=22.548872,72.944734&amp;sspn=0.117318,0.209255&amp;ie=UTF8&amp;hq=&amp;hnear=New+York,+United+States&amp;t=m&amp;z=10&amp;iwloc=A&amp;ll=40.714353,-74.005973&amp;output=embed">
+    </iframe>
+</section>
+<!--map end-->
+
+
+<!--Begin Scroll top-->
+<div id="scroll-up" class="scroll-up"><i class="icon-up-open-big"></i></div>
+<!--End Scroll top--> 
+
+
+<!-- Bootstrap core JavaScrdipt
+
+================================================== --> 
+
+<!-- Placed at the end of the document so the pages load faster --> 
+
+<script src="js/jquery.easing.1.3.min.js"></script> 
+<script src="lib/bootstrap/js/transition.js"></script> 
+<script src="lib/bootstrap/js/alert.js"></script> 
+<script src="lib/bootstrap/js/modal.js"></script> 
+
+<!--<script src="lib/bootstrap/js/dropdown.js"></script>--> 
+
+<script src="lib/bootstrap/js/bootstrap.min.js"></script> 
+<script src="lib/bootstrap/js/twitter-bootstrap-hover-dropdown.js"></script> 
+<script src="lib/bootstrap/js/scrollspy.js"></script> 
+<script src="lib/bootstrap/js/affix.js"></script> 
+<script src="lib/bootstrap/js/tab.js"></script> 
+<script src="lib/bootstrap/js/tooltip.js"></script> 
+<script src="lib/bootstrap/js/popover1.js"></script> 
+<script src="lib/bootstrap/js/button.js"></script> 
+<script src="lib/bootstrap/js/collapse.js"></script> 
+<script src="lib/isotope/js/jquery.isotope.min.js"></script> 
+
+<script src="js/jquery.lazy.js"></script> 
+
+
+<script src="js/jquery.parallax-1.1.3.js"></script> 
+<script src="js/custom-script.js"></script> 
+
+<!--   <script src="js/jquery.queryloader2.js"></script> 
+--><script src="js/jquery.easypiechart.js"></script> 
+<!--<script src="js/jquery.validate.js"></script>-->
+<!-- JS youtube video -->
+<script src="js/videojs/jquery.mb.YTPlayer.js"></script>
+<script src="js/videojs/device.min.js" ></script> 
+<script src="js/videojs/bgvideo-youtube-init.js" ></script> 
+<script src="js/jquery.sequence.js"></script>
+<script src="js/sequencejs.js"></script>
+</body>
+
+
+</html>

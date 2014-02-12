@@ -1,0 +1,11 @@
+Theon1 Versions
+=================
+ initial release: 10 Jan 2014
+
+26 Jan 2014 
+Version 1.0.1 release 
+- Edit change in js for more flexibility to customize 
+- Adding browser compatibility for safari and opera 
+- Minor changes for section in CSS
+- Fix crash in IOS
+

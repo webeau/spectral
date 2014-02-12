@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+ <title>The One - blog inside template</title>
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <meta name="author" content="Sprintheme">
+ <meta charset="UTF-8"/>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+ <link rel="icon" type="image/ico" href="images/favicon.ico"/>
+ <link href="lib/isotope/css/style.css" rel="stylesheet"/>
+ <link href="lib/fontello/css/fontello.css" rel="stylesheet"/>
+ <link href="style.css" rel="stylesheet"/>
+ <link href="css/color-azure-blue.css" rel="stylesheet"/>
+ <link href="css/color-chestnut.css" rel="stylesheet"/>
+ <link href="css/color-frog.css" rel="stylesheet"/>
+ <link href="css/color-grass.css" rel="stylesheet"/>
+ <link href="css/color-pale-brown.css" rel="stylesheet"/>
+ <link href="css/color-plum.css" rel="stylesheet"/>
+ <link href="css/color-red.css" rel="stylesheet"/>
+ <link href="css/color-titian.css" rel="stylesheet"/>
+ <link href="css/color-twitter.css" rel="stylesheet"/>
+ <link href="css/color-yellow.css" rel="stylesheet"/>
+
+ <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+ <!-- Fav and touch icons -->
+ <link rel="shortcut icon" href="images/ico/favicon.ico">
+ <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+ <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+ <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+ <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+ <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+ <script src="js/jquery.cycle2.js"></script> 
+ <script src="js/jquery.cycle2.carousel.js"></script> 
+ <script src="js/animation.js"></script> 
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+
+
+
+    <!--Twitter Like button-->
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <!--Facebook like button-->
+
+    <script>(function(d, s, id) {
+
+        var js, fjs = d.getElementsByTagName(s)[0];
+
+        if (d.getElementById(id)) return;
+
+        js = d.createElement(s); js.id = id;
+
+        js.src = "//connect.facebook.net/en_EN/all.js#xfbml=1";
+
+        fjs.parentNode.insertBefore(js, fjs);
+
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!--Pinit like Button-->
+
+    <script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+
+    <script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
+
+</head>
+
+
+<body data-body-class="titian">
+
+<div id="fb-root"></div> <!--For Facebook like button-->
+
+
+
+<div class="wrapper">
+
+<!-- Start Header section -->
+
+<header class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar-top">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <!-- start button for collapsed menu-->
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+                        <span class="sr-only">Toggle navigation</span>
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">THE<strong>ONE</strong></a>
+
+                </div>
+
+                <!-- end button for collapsed menu-->
+
+                <!-- start menu-->
+
+                <div class="navbar-collapse collapse bs-js-navbar-scrollspy">
+
+                    <ul class="nav navbar-nav navbar-right">
+            <li> <a href="index.html" class="homelink">Home</a> </li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" id="navbarDrop1">Features</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDrop1">
+                <li><a href="index.html">Motion Slider</a></li>
+                <li><a href="index-ParallaxSlider.html">Parallax Slider</a></li>
+                <li><a href="index-video.html">Video backgrounds</a></li>
+                <li><a href="shortcode.html">Shortcodes</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+
+                </div>
+
+                <!-- end menu-->
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- End Header section -->
+
+
+
+<section class="main-content">
+
+    <div class="breadcrumbs">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <ol class="breadcrumb">
+
+                        <li><a href="/">Home</a></li>
+
+                        <li><a href="blog.html">Blog</a></li>
+
+                        <li class="active"><a href="#">Image Post</a></li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9">
+
+                    <article class="post">
+
+                        <header>
+
+                            <span class="pull-left custom-date">
+
+                                27<br />
+
+                                OCT
+
+                            </span>
+
+                            <h1>Image Post</h1>
+
+                            <p class="post-meta">
+
+                                <a href="#">Posted by admin</a>
+
+                                |
+
+                                Sport2
+
+                                |
+
+                                Comments (1)
+
+                                |
+
+                                June 12, 2013
+
+                            </p>
+
+                            <div class="clearfix"></div>
+
+                        </header>
+
+                        <div class="post-thumb">
+
+                            <img src="images/blog/blog1.jpg" alt="Post title - Image post" />
+
+                        </div>
+
+                        <div class="post-content">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+
+                            <img class="lazy" src="" data-src="images/blog/blog1.jpg" alt="Post title - Image post" /><br><br>
+
+                        </div>
+
+                        <div class="post-share text-center">
+
+                            <span><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a></span>
+
+                            <span><a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></span>
+
+                            <span><div class="g-plusone" data-size="medium" data-annotation="none"></div></span>
+
+                            <span><div class="fb-like" data-href="http://html.the-one.loc/blog-inside.html" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div></span>
+
+                        </div>
+
+                    </article>
+
+                <section class="post-navigation">
+
+                    <div class="row">
+
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
+
+                            <span class="slide-nav">
+
+                                <a href="#"><i class="icon-left-open-big"></i></a>
+
+                            </span>
+
+                            <div class="navigation-text">
+
+                                <p class="navigation-link"><a href="#">Previous article</a></p>
+
+                                <p class="navigation-post-title">Demo article with a slider</p>
+
+                                <p class="navigation-post-date">June 12, 2013 at 2:14 pm</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+
+                            <div class="navigation-text">
+
+                                <p class="navigation-link"><a href="#">Next article</a></p>
+
+                                <p class="navigation-post-title">Demo article with a slider</p>
+
+                                <p class="navigation-post-date">June 12, 2013 at 2:14 pm</p>
+
+                            </div>
+
+                            <span class="slide-nav">
+
+                                <a href="#"><i class="icon-right-open-big"></i></a>
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="post-comment-list">
+
+                    <hgroup class="col-sm-offset-1">
+
+                        <h3>&nbsp;Comments <a>(1)</a></h3>
+
+                    </hgroup>
+
+                    <div class="comment-list">
+
+                        <ol class="media-list">
+
+                            <li class="media">
+
+                                <span class="pull-left">
+
+                                    <img src="images/blog/default-avatar.jpg" />
+
+                                </span>
+
+                                <div class="media-body">
+
+                                    <p class="media-heading"><a href="#" target="_blank">David Wilson</a> <i>Says:</i></p>
+
+                                    <p class="comment-meta">June 12, 2013 at 2:14 pm</p>
+
+                                    <p>Lorem ipsum dolor sit amet,  adipiscing elit. Mauris at nulla pharetra, tristique sapien sed, auctor arcu. Curabitur quis faucibus risus, eu ullamcorper eros. Donec non sodales libero, id commodo urna. Sed nec condimentum nulla.</p>
+
+
+
+                                    <p>Maecenas consequat, odio at malesuada tincidunt, dui enim convallis enim, a convallis massa tortor quis turpis. Praesent laoreet lacinia purus et facilisis. Sed blandit eros nec magna euismod pulvinar. Quisque ultrices quis eros fringilla condimentum. Suspendisse fringilla consectetur elit quis egestas.</p>
+
+                                    <div class="comment-footer"><a href="#">You must to login to post a reply</a></div>
+
+                                </div>
+
+                            </li>
+
+                        </ol>
+
+                    </div>
+
+                </section>
+
+                <section class="post-add-comment">
+
+                    <div class="row">
+
+                        <div class='col-lg-8'>
+
+                            <hgroup class="col-sm-offset-3">
+
+                                <h3>&nbsp;Leave A Comment</h3>
+
+                            </hgroup>
+
+                            <form class="form-horizontal" role="form">
+
+                                <div class="form-group">
+
+                                    <label for="inputName" class="col-sm-3 control-label">
+
+                                        Name<span class="req">*</span>
+
+                                    </label>
+
+                                    <div class="col-sm-9">
+
+                                        <input type="text" class="form-control input-lg" id="inputName">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="inputEmail" class="col-sm-3 control-label">
+
+                                        Email<span class="req">*</span>
+
+                                    </label>
+
+                                    <div class="col-sm-9">
+
+                                        <input type="email" class="form-control input-lg" id="inputEmail">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="inputTitle" class="col-sm-3 control-label">
+
+                                        Website<span class="req"></span>
+
+                                    </label>
+
+                                    <div class="col-sm-9">
+
+                                        <input type="text" class="form-control input-lg" id="inputTitle">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="inputMessage" class="col-sm-3 control-label">
+
+                                        Comment<span class="req">*</span>
+
+                                    </label>
+
+                                    <div class="col-sm-9">
+
+                                        <textarea class="form-control" id="inputMessage" rows="9"></textarea>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <div class="col-sm-offset-3 col-sm-9">
+
+                                        <button type="submit" class="btn btn-default btn-lg">Send</button>
+
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <aside class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
+
+                <div class="widget">
+
+                    <form role="search" method="get" class="search-form" action="">
+
+                        <input type="search" class="search-field form-control" placeholder="Search …" value="" name="s" title="Search for:" />
+
+                        <button type="submit" class="search-submit"><i class="icon-search"></i></button>
+
+                    </form>
+
+                </div>
+
+                <div class="widget">
+
+                    <h3>Recent posts</h3>
+
+                    <ul>
+
+                        <li>
+
+                            <a href="blog-inside.html">Image Post</a>
+
+                            <span class="post-date">Dec 08, 2013</span>
+
+                        </li>
+
+                        <li>
+
+                            <a href="post-slider.html">Slider post</a>
+
+                            <span class="post-date">Nov 08, 2013</span>
+
+                        </li>
+
+                        <li>
+
+                            <a href="post-video.html">Video post</a>
+
+                            <span class="post-date">Oct 03, 2013</span>
+
+                        </li>
+
+                        <li>
+
+                            <a href="post-sound.html">Sound post</a>
+
+                            <span class="post-date">Sep 29, 2013</span>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="widget">
+
+                    <h3>Categories</h3>
+
+                    <ul>
+
+                        <li>
+
+                            <a href="#">Sport</a>
+
+                            (7)
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Nature</a>
+
+                            (1)
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Video</a>
+
+                            (14)
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="widget">
+
+                    <h3>Archives</h3>
+
+                    <ul>
+
+                        <li>
+
+                            <a href="#">October 2013</a>
+
+                            (7)
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">November 2013</a>
+
+                            (1)
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">September 2013</a>
+
+                            (14)
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="widget">
+
+                    <h3>Tags</h3>
+
+                    <div class="tagcloud">
+
+                        <a href="#">Food</a>
+
+                        <a href="#">Music</a>
+
+                        <a href="#">Life</a>
+
+                        <a href="#">Cars</a>
+
+                        <a href="#">Food</a>
+
+                        <a href="#">Music</a>
+
+                        <a href="#">Life</a>
+
+                        <a href="#">Cars</a>
+
+                        <a href="#">Food</a>
+
+                        <a href="#">Music</a>
+
+                        <a href="#">Life</a>
+
+                        <a href="#">Cars</a>
+
+                    </div>
+
+                </div>
+
+                <div class="widget">
+
+                    <h3>Text Widget</h3>
+
+                    <p>Lorem ipsum dolor sit amet,  adipiscing elit. Mauris at nulla pharetra, tristique sapien sed, auctor arcu. Curabitur quis faucibus risus, eu ullamcorper eros. Donec non sodales libero, id commodo urna. Sed nec condimentum nulla. Maecenas consequat, odio at malesuada</p>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</div>
+
+
+
+
+<div class="footerpadding"></div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+      	<img src="images/the1logowhite.png" class="whitelogo"/>
+		 <div class="social-icons"> <a href="#" target="_blank"> <i class="icon-facebook"></i> </a> <a href="#" target="_blank"> <i class="icon-twitter"></i> </a> <a href="#" target="_blank"> <i class="icon-gplus"></i> </a> <a href="#" target="_blank"> <i class="icon-linkedin"></i> </a> </div>
+        <nav class="footer-navigation">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="copyright">Copyright &copy; 2013 theone.  All rights reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!--Begin Scroll top-->
+
+<div id="scroll-up" class="scroll-up"><i class="icon-up-open-big"></i></div>
+
+<!--End Scroll top-->
+
+
+<!-- Bootstrap core JavaScrdipt
+
+================================================== -->
+
+<!-- Placed at the end of the document so the pages load faster --> 
+
+<script src="js/jquery.easing.1.3.min.js"></script> 
+<script src="lib/bootstrap/js/transition.js"></script> 
+<script src="lib/bootstrap/js/alert.js"></script> 
+<script src="lib/bootstrap/js/modal.js"></script> 
+
+<!--<script src="lib/bootstrap/js/dropdown.js"></script>--> 
+
+<script src="lib/bootstrap/js/bootstrap.min.js"></script> 
+<script src="lib/bootstrap/js/twitter-bootstrap-hover-dropdown.js"></script> 
+<script src="lib/bootstrap/js/scrollspy.js"></script> 
+<script src="lib/bootstrap/js/affix.js"></script> 
+<script src="lib/bootstrap/js/tab.js"></script> 
+<script src="lib/bootstrap/js/tooltip.js"></script> 
+<script src="lib/bootstrap/js/popover1.js"></script> 
+<script src="lib/bootstrap/js/button.js"></script> 
+<script src="lib/bootstrap/js/collapse.js"></script> 
+<script src="lib/isotope/js/jquery.isotope.min.js"></script> 
+
+<script src="js/jquery.lazy.js"></script> 
+
+<script src="js/jquery.parallax-1.1.3.js"></script> 
+<script src="js/custom-script.js"></script> 
+
+</body>
+
+</html>

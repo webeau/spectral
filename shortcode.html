@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+ <title>The One - shortcodes page template</title>
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <meta name="author" content="Sprintheme">
+ <meta charset="UTF-8"/>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+ <link rel="icon" type="image/ico" href="images/favicon.ico"/>
+ <link href="lib/isotope/css/style.css" rel="stylesheet"/>
+ <link href="lib/fontello/css/fontello.css" rel="stylesheet"/>
+ <link href="style.css" rel="stylesheet"/>
+ <link href="css/color-azure-blue.css" rel="stylesheet"/>
+ <link href="css/color-chestnut.css" rel="stylesheet"/>
+ <link href="css/color-frog.css" rel="stylesheet"/>
+ <link href="css/color-grass.css" rel="stylesheet"/>
+ <link href="css/color-pale-brown.css" rel="stylesheet"/>
+ <link href="css/color-plum.css" rel="stylesheet"/>
+ <link href="css/color-red.css" rel="stylesheet"/>
+ <link href="css/color-titian.css" rel="stylesheet"/>
+ <link href="css/color-twitter.css" rel="stylesheet"/>
+ <link href="css/color-yellow.css" rel="stylesheet"/>
+
+ <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+ <!-- Fav and touch icons -->
+ <link rel="shortcut icon" href="images/ico/favicon.ico">
+ <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+ <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+ <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+
+ <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+ <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+ <script src="js/jquery.cycle2.js"></script> 
+ <script src="js/jquery.cycle2.carousel.js"></script> 
+ <script src="js/animation.js"></script> 
+ <!--Image to SVG-->
+ <script type="text/javascript">  
+        jQuery(document).ready(function() {
+            /*
+             * Replace all SVG images with inline SVG
+             */
+           $('img.svg').each(function(){
+            var $img = $(this);
+            var imgID = $img.attr('id');
+            var imgClass = $img.attr('class');
+            var imgURL = $img.attr('src');
+        
+            $.get(imgURL, function(data) {
+                // Get the SVG tag, ignore the rest
+                var $svg = $(data).find('svg');
+                // Add replaced image's ID to the new SVG
+                if (typeof imgID !== 'undefined') {
+                    $svg = $svg.attr('id', imgID);
+                }
+                // Add replaced image's classes to the new SVG
+                if (typeof imgClass !== 'undefined') {
+                    $svg = $svg.attr('class', imgClass+' replaced-svg');
+                }
+                // Remove any invalid XML tags as per http://validator.w3.org
+                $svg = $svg.removeAttr('xmlns:a');
+                // Replace image with new SVG
+                $img.replaceWith($svg);
+            });
+        });
+        });
+    </script>
+   
+    <!--Image to SVG end-->
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+
+
+</head>
+
+<body data-body-class="titian">
+
+<div class="wrapper">
+
+<!-- Start Header section -->
+
+<header class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar-top">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <!-- start button for collapsed menu-->
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+                        <span class="sr-only">Toggle navigation</span>
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">THE<strong>ONE</strong></a>
+
+                </div>
+
+                <!-- end button for collapsed menu-->
+
+                <!-- start menu-->
+
+                <div class="navbar-collapse collapse bs-js-navbar-scrollspy">
+
+                   <ul class="nav navbar-nav navbar-right">
+            <li> <a href="index.html" class="homelink">Home</a> </li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="index.html#services">services</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="dropdown current-menu-item"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" id="navbarDrop1">Features</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDrop1">
+                <li><a href="index.html">Motion Slider</a></li>
+                <li><a href="index-ParallaxSlider.html">Parallax Slider</a></li>
+                <li><a href="index-video.html">Video Background</a></li>
+                <li ><a href="shortcode.html">Shortcodes</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+
+                </div>
+
+                <!-- end menu-->
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- End Header section -->
+
+
+
+<section class="main-content">
+
+    <div class="breadcrumbs">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <ol class="breadcrumb">
+
+                        <li><a href="#">Home</a></li>
+
+                        <li class="active"><a href="#">Shotcode</a></li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row custom-row-space">
+
+            <div class="col-sm-12 col-lg-6">
+
+                <hgroup>
+
+                    <h2 class="text-center">Accordion</h2>
+
+                </hgroup>
+
+                <p>&nbsp;</p>
+
+                <div class="panel-group custom-panel-group accordions" id="accordion">
+
+                    <div class="panel panel-custom">
+
+                        <div class="panel-heading">
+
+                            <h5 class="panel-title">
+
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="active">
+
+                                    Collapsible Group Item #1
+
+                                </a>
+
+                            </h5>
+
+                        </div>
+
+                        <div id="collapseOne" class="panel-collapse collapse in">
+
+                            <div class="panel-body">
+
+                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="panel panel-custom">
+
+                        <div class="panel-heading">
+
+                            <h5 class="panel-title">
+
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+
+                                    Collapsible Group Item #2
+
+                                </a>
+
+                            </h5>
+
+                        </div>
+
+                        <div id="collapseTwo" class="panel-collapse collapse">
+
+                            <div class="panel-body">
+
+                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="panel panel-custom">
+
+                        <div class="panel-heading">
+
+                            <h5 class="panel-title">
+
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+
+                                    Collapsible Group Item #3
+
+                                </a>
+
+                            </h5>
+
+                        </div>
+
+                        <div id="collapseThree" class="panel-collapse collapse">
+
+                            <div class="panel-body">
+
+                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-6">
+
+                <hgroup>
+
+                    <h2 class="text-center">Toggles</h2>
+
+                </hgroup>
+
+                <p>&nbsp;</p>
+
+                <div class="panel-group custom-panel-group toggles">
+
+                    <div class="panel panel-custom">
+
+                        <div class="panel-heading">
+
+                            <h5 class="panel-title">
+
+                                <a data-toggle="collapse" href="#toggleOne" class="active">
+
+                                    Collapsible Group Item #1
+
+                                </a>
+
+                            </h5>
+
+                        </div>
+
+                        <div id="toggleOne" class="panel-collapse collapse in">
+
+                            <div class="panel-body">
+
+                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="panel panel-custom">
+
+                        <div class="panel-heading">
+
+                            <h5 class="panel-title">
+
+                                <a data-toggle="collapse" href="#toggleTwo">
+
+                                    Collapsible Group Item #2
+
+                                </a>
+
+                            </h5>
+
+                        </div>
+
+                        <div id="toggleTwo" class="panel-collapse collapse">
+
+                            <div class="panel-body">
+
+                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="panel panel-custom">
+
+                        <div class="panel-heading">
+
+                            <h5 class="panel-title">
+
+                                <a data-toggle="collapse" href="#toggleThree">
+
+                                    Collapsible Group Item #3
+
+                                </a>
+
+                            </h5>
+
+                        </div>
+
+                        <div id="toggleThree" class="panel-collapse collapse">
+
+                            <div class="panel-body">
+
+                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+
+            <div class="col-lg-12">&nbsp;</div>
+
+        </div>
+
+
+
+        <!--Start Tabs and Buttons Text-->
+
+        <div class="row custom-row-space">
+
+            <div class="col-sm-12 col-lg-6">
+
+                <hgroup>
+
+                    <h2 class="text-center">Tabs</h2>
+
+                </hgroup>
+
+                <p>&nbsp;</p>
+
+                <div>
+
+                    <!-- Nav tabs -->
+
+                    <ul class="nav nav-tabs nav-justified" data-tabs="tabs">
+
+                        <li class="active"><a href="#nav-home" data-toggle="tab">Tab One</a></li>
+
+                        <li><a href="#nav-profile" data-toggle="tab">Tab Two</a></li>
+
+                        <li><a href="#nav-messages" data-toggle="tab">Tab Three</a></li>
+
+                        <li><a href="#nav-settings" data-toggle="tab">Tab Four</a></li>
+
+                    </ul>
+
+
+
+                    <!-- Tab panes -->
+
+                    <div class="tab-content">
+
+                        <div class="tab-pane active" id="nav-home">
+
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+                        </div>
+
+                        <div class="tab-pane" id="nav-profile">
+
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."</p>
+
+                        </div>
+
+                        <div class="tab-pane" id="nav-messages">
+
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+                        </div>
+
+                        <div class="tab-pane" id="nav-settings">
+
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-6">
+
+                <hgroup>
+
+                    <h2 class="text-center">Button</h2>
+
+                </hgroup>
+
+                <p>&nbsp;</p>
+
+                <div class="row button-align">
+
+                    <div class="col-xs-6 col-lg-3">
+
+                        <p class="text-center"><a href="#" class="btn btn-red btn-bottom-border">Save</a></p>
+
+                    </div>
+
+                    <div class="col-xs-6 col-lg-3">
+
+                        <p class="text-center"><a href="#" class="btn btn-red">Save</a></p>
+
+                    </div>
+
+                    <div class="col-xs-6 col-lg-3">
+
+                        <p class="text-center"><a href="#" class="btn btn-red btn-gradient">Save</a></p>
+
+                    </div>
+
+                    <div class="col-xs-6 col-lg-3">
+
+                        <p class="text-center"><a href="#" class="btn btn-red btn-empty">Save</a></p>
+
+                    </div>
+
+                </div>
+
+                <div class="row button-align">
+
+                    <div class="col-xs-6 col-lg-3">
+
+                        <p class="text-center"><a href="#" class="btn btn-green btn-bottom-border">Save</a></p>
+
+                    </div>
+
+                    <div class="col-xs-6 col-lg-3">
+
+                        <p class="text-center"><a href="#" class="btn btn-green">Save</a></p>
+
+                    </div>
+
+                    <div class="col-xs-6 col-lg-3">
+
+                        <p class="text-center"><a href="#" class="btn btn-green btn-gradient">Save</a></p>
+
+                    </div>
+
+                    <div class="col-xs-6 col-lg-3">
+
+                        <p class="text-center"><a href="#" class="btn btn-green btn-empty">Save</a></p>
+
+                    </div>
+
+                </div>
+
+                <div class="row button-align">
+
+                    <div class="col-xs-6 col-lg-3">
+
+                        <p class="text-center"><a href="#" class="btn btn-blue btn-bottom-border">Save</a></p>
+
+                    </div>
+
+                    <div class="col-xs-6 col-lg-3">
+
+                        <p class="text-center"><a href="#" class="btn btn-blue">Save</a></p>
+
+                    </div>
+
+                    <div class="col-xs-6 col-lg-3">
+
+                        <p class="text-center"><a href="#" class="btn btn-blue btn-gradient">Save</a></p>
+
+                    </div>
+
+                    <div class="col-xs-6 col-lg-3">
+
+                        <p class="text-center"><a href="#" class="btn btn-blue btn-empty">Save</a></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--End Callout Text-->
+
+
+
+        <div class="row">
+
+            <div class="col-lg-12">&nbsp;</div>
+
+        </div>
+
+
+
+        <div class="row custom-row-space">
+
+            <div class="col-sm-12 col-lg-6">
+
+                <hgroup>
+
+                    <h2 class="text-center">Skills Bar</h2>
+
+                </hgroup>
+
+                <p>&nbsp;</p>
+
+                <div class="progress">
+
+                    <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100" style="width: 76%;">
+
+                        <span class="pull-right">76%</span>
+
+                        <span class="pull-left">UX Design</span>
+
+                    </div>
+
+                </div>
+
+                <div class="progress">
+
+                    <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 86%;">
+
+                        <span class="pull-right">86%</span>
+
+                        <span class="pull-left">Web Design</span>
+
+                    </div>
+
+                </div>
+
+                <div class="progress">
+
+                    <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100" style="width: 56%;">
+
+                        <span class="pull-right">56%</span>
+
+                        <span class="pull-left">HTML/CSS</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-6">
+
+                <hgroup>
+
+                    <h2 class="text-center">Skills Progress</h2>
+
+                </hgroup>
+
+                <p>&nbsp;</p>
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-lg-4 text-center">
+
+                        <div class="easyPieChart" data-percent="83" data-barcolor="#de4a32" data-trackcolor="#dedede" data-linewidth="4"><span>83%</span></div>
+
+                        UX Design
+
+                    </div>
+
+                    <div class="col-xs-12 col-lg-4 text-center">
+
+                        <div class="easyPieChart" data-percent="92" data-barcolor="#de4a32" data-trackcolor="#dedede" data-linewidth="4"><span>92%</span></div>
+
+                        Web Design
+
+                    </div>
+
+                    <div class="col-xs-12 col-lg-4 text-center">
+
+                        <div class="easyPieChart" data-percent="50" data-barcolor="#de4a32" data-trackcolor="#dedede" data-linewidth="4"><span>50%</span></div>
+
+                        HTML/CSS
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+
+            <div class="col-lg-12">&nbsp;</div>
+
+        </div>
+
+
+
+        <div class="row custom-row-space">
+
+            <div class="col-lg-12">
+
+                <hgroup>
+
+                    <h2 class="text-center">SVG Icons</h2>
+
+                </hgroup>
+
+                <p>&nbsp;</p>
+
+                <p class="svg-icons">
+					<i class="icon-set"><img src="images/svg-icons/alarm_clock-01.svg" class="svg"/></i>
+					<i class="icon-set"><img src="images/svg-icons/alien.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/basket_3.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/basketball.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/chef.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/clock_1.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/coffee 2.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/crab.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/cup_ice_cream.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/designfloat.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/direction_sign_1.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/flag_3.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/foot_2.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/gear.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/gg_talk.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/gift.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/glasses.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/global-01.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/graduation_cap-01.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/map_marker_1.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/marker.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/message_8.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/Missile.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/Mustache.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/pai_chart.svg" class="svg"/></i>
+                    <i class="icon-set"><img src="images/svg-icons/pencil.svg" class="svg"/></i>
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+
+            <div class="col-lg-12">&nbsp;</div>
+
+        </div>
+
+        <!--Start Message Box-->
+
+        <div class="row custom-row-space">
+
+            <div class="col-lg-12">
+
+                <hgroup>
+
+                    <h2 class="text-center">Message Boxes</h2>
+
+                </hgroup>
+
+                <p>&nbsp;</p>
+
+                <div class="alert alert-gray">
+
+                    <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
+
+                    <div class="clearfix"></div>
+
+                    <p class="text-center">Lorem ipsum dolor sit amet,  adipiscing elit. Mauris at nulla pharetra, tristique sapien sed, auctor arcu. Curabitur quis faucibus risus, eu ullamcorper eros. Donec non sodales libero, id commodo urna. Sed nec condimentum nulla.<br /></p>
+
+                </div>
+
+                <div class="alert alert-colored">
+
+                    <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
+
+                    <div class="clearfix"></div>
+
+                    <p class="text-center">Lorem ipsum dolor sit amet,  adipiscing elit. Mauris at nulla pharetra, tristique sapien sed, auctor arcu. Curabitur quis faucibus risus, eu ullamcorper eros. Donec non sodales libero, id commodo urna. Sed nec condimentum nulla.<br /></p>
+
+                </div>
+
+                <div class="alert alert-border">
+
+                    <a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
+
+                    <div class="clearfix"></div>
+
+                    <p class="text-center">Lorem ipsum dolor sit amet,  adipiscing elit. Mauris at nulla pharetra, tristique sapien sed, auctor arcu. Curabitur quis faucibus risus, eu ullamcorper eros. Donec non sodales libero, id commodo urna. Sed nec condimentum nulla.<br /></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+
+            <div class="col-lg-12">&nbsp;</div>
+
+        </div>
+
+
+
+        <!--Start Callout Text-->
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <hgroup>
+
+                    <h2 class="text-center">Callout Text</h2>
+
+                </hgroup>
+
+                <p>&nbsp;</p>
+
+                <div class="callout-text">
+
+                    <div class="row">
+					 <hgroup class="col-xs-12 col-md-8 col-lg-7">
+        <h2 class="text-center"> Did you see the one video background ? </h2>
+      </hgroup>
+      <div class="col-xs-12 col-md-4 col-lg-5 text-center"> <a href="index-video.html" class="btn btn-lg btn-empty btn-white">Live Preview!</a> </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--End Callout Text-->
+
+
+
+
+
+        <div class="row">
+
+            <div class="col-lg-12">&nbsp;</div>
+
+        </div>
+
+
+
+        <!--Start grid example-->
+
+        <div class="row custom-row-space">
+
+            <div class="col-lg-12">
+
+                <hgroup>
+
+                    <h2 class="text-center">Grid</h2>
+
+                </hgroup>
+
+            </div>
+
+        </div>
+
+        <div class="row custom-row-space">
+
+            <div class="col-sm-12 col-lg-6">
+
+                <h3>1/2 COLUMNS</h3>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and</p>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-6">
+
+                <h3>1/2 COLUMNS</h3>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and</p>
+
+            </div>
+
+        </div>
+
+        <div class="row custom-row-space">
+
+            <div class="col-sm-12 col-lg-4">
+
+                <h3>1/3 COLUMNS</h3>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-4">
+
+                <h3>1/3 COLUMNS</h3>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-4">
+
+                <h3>1/3 COLUMNS</h3>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+
+            </div>
+
+        </div>
+
+        <div class="row custom-row-space">
+
+            <div class="col-sm-12 col-lg-4">
+
+                <h3>1/3 COLUMNS</h3>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-8">
+
+                <h3>2/3 COLUMNS</h3>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            </div>
+
+        </div>
+
+        <div class="row custom-row-space">
+
+            <div class="col-sm-12 col-lg-3">
+
+                <h3>1/4 COLUMNS</h3>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-3">
+
+                <h3>1/4 COLUMNS</h3>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-3">
+
+                <h3>1/4 COLUMNS</h3>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-3">
+
+                <h3>1/4 COLUMNS</h3>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+
+            </div>
+
+        </div>
+
+        <div class="row custom-row-space">
+
+            <div class="col-sm-12 col-lg-3">
+
+                <h3>1/4 COLUMNS</h3>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-6">
+
+                <h3>1/2 COLUMNS</h3>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and </p>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-3">
+
+                <h3>1/4 COLUMNS</h3>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+
+            </div>
+
+        </div>
+
+        <!--End grid example-->
+
+
+
+        <div class="row">
+
+            <div class="col-lg-12">&nbsp;</div>
+
+        </div>
+
+
+
+        <!--Begin Lists style-->
+
+        <div class="row custom-row-space">
+
+            <div class="col-lg-12">
+
+                <hgroup>
+
+                    <h2 class="text-center">Lists</h2>
+
+                </hgroup>
+
+            </div>
+
+        </div>
+
+        <div class="row custom-row-space">
+
+            <div class="col-sm-12 col-lg-4">
+
+                <ul class="list-mark list-check list-empty">
+
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+
+                    <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+
+                    <li>Curabitur a augue a justo pharetra </li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-4">
+
+                <ul class="list-mark list-plus list-empty">
+
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+
+                    <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+
+                    <li>Curabitur a augue a justo pharetra </li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-4">
+
+                <ul class="list-mark list-remove list-empty">
+
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+
+                    <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+
+                    <li>Curabitur a augue a justo pharetra </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="row custom-row-space">
+
+            <div class="col-sm-12 col-lg-4">
+
+                <ul class="list-mark list-check list-full">
+
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+
+                    <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+
+                    <li>Curabitur a augue a justo pharetra </li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-4">
+
+                <ul class="list-mark list-plus list-full">
+
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+
+                    <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+
+                    <li>Curabitur a augue a justo pharetra </li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-4">
+
+                <ul class="list-mark list-remove list-full">
+
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+
+                    <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+
+                    <li>Curabitur a augue a justo pharetra </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="row custom-row-space">
+
+            <div class="col-sm-12 col-lg-4">
+
+                <ol class="list-num list-empty">
+
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+
+                    <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+
+                    <li>Curabitur a augue a justo pharetra </li>
+
+                </ol>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-4">
+
+                <ol class="list-num list-full">
+
+                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+
+                    <li>Mauris sed nisl hendrerit, tincidunt ante</li>
+
+                    <li>Curabitur a augue a justo pharetra </li>
+
+                </ol>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-4">
+
+            </div>
+
+        </div>
+
+        <!--End lists styles-->
+
+
+
+    </div>
+
+</section>
+
+</div>
+
+
+
+
+<div class="footerpadding"></div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+      	<img src="images/the1logowhite.png" class="whitelogo"/>
+		 <div class="social-icons"> <a href="#" target="_blank"> <i class="icon-facebook"></i> </a> <a href="#" target="_blank"> <i class="icon-twitter"></i> </a> <a href="#" target="_blank"> <i class="icon-gplus"></i> </a> <a href="#" target="_blank"> <i class="icon-linkedin"></i> </a> </div>
+        <nav class="footer-navigation">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="copyright">Copyright &copy; 2013 theone.  All rights reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!--Begin Scroll top-->
+
+<div id="scroll-up" class="scroll-up"><i class="icon-up-open-big"></i></div>
+
+<!--End Scroll top-->
+
+
+
+<!-- Bootstrap core JavaScript
+
+================================================== -->
+
+<!-- Placed at the end of the document so the pages load faster --> 
+
+<script src="js/jquery.easing.1.3.min.js"></script> 
+<script src="lib/bootstrap/js/transition.js"></script> 
+<script src="lib/bootstrap/js/alert.js"></script> 
+<script src="lib/bootstrap/js/modal.js"></script> 
+
+<!--<script src="lib/bootstrap/js/dropdown.js"></script>--> 
+
+<script src="lib/bootstrap/js/bootstrap.min.js"></script> 
+<script src="lib/bootstrap/js/twitter-bootstrap-hover-dropdown.js"></script> 
+<script src="lib/bootstrap/js/scrollspy.js"></script> 
+<script src="lib/bootstrap/js/affix.js"></script> 
+<script src="lib/bootstrap/js/tab.js"></script> 
+<script src="lib/bootstrap/js/tooltip.js"></script> 
+<script src="lib/bootstrap/js/popover1.js"></script> 
+<script src="lib/bootstrap/js/button.js"></script> 
+<script src="lib/bootstrap/js/collapse.js"></script> 
+<script src="lib/isotope/js/jquery.isotope.min.js"></script> 
+<script src="js/jquery.lazy.js"></script> 
+<script src="js/jquery.parallax-1.1.3.js"></script> 
+<script src="js/custom-script.js"></script> 
+<script src="js/jquery.easypiechart.js"></script>
+
+
+</body>
+
+</html>

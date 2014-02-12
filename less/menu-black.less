@@ -1,0 +1,21 @@
+@import 'all-colors';
+.navbar{
+  &.navbar-default{
+    background: @black;
+    .navbar-nav{
+      > li{
+        > a{
+          color: @white;
+        }
+        .dropdown-menu{
+          background: @white;
+          li{
+            a{
+              color: @black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
